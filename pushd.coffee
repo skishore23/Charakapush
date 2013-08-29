@@ -3,7 +3,7 @@ dgram = require 'dgram'
 zlib = require 'zlib'
 url = require 'url'
 Netmask = require('netmask').Netmask
-settings = require '/settings'
+settings = require './settings'
 redis = require('redis').createClient(settings.server.redis_socket or settings.server.redis_port, settings.server.redis_host, 
                             {no_ready_check: true})
 Subscriber = require('./lib/subscriber').Subscriber
