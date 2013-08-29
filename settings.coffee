@@ -3,8 +3,8 @@ exports.server =
     redis_host: 'scat.redistogo.com'
     # redis_socket: '/var/run/redis/redis.sock'
     redis_auth: 'bdbca0a711623021a8780e6074007492'
-    tcp_port: 8000
-    udp_port: 8000
+    tcp_port: 80
+    udp_port: 80
     access_log: yes
     acl:
         # restrict publish access to private networks
@@ -69,14 +69,14 @@ exports['http'] =
     class: require('./lib/pushservices/http').PushServiceHTTP
 
 exports['mpns-toast'] =
-    enabled: yes
+    enabled: no
     class: require('./lib/pushservices/mpns').PushServiceMPNS
     type: 'toast'
     # Used for WP7.5+ to handle deep linking
     paramTemplate: '/Page.xaml?object=${data.object_id}'
 
 exports['mpns-tile'] =
-    enabled: yes
+    enabled: no
     class: require('./lib/pushservices/mpns').PushServiceMPNS
     type: 'tile'
     # Mapping defines where - in the payload - to get the value of each required properties
@@ -96,6 +96,6 @@ exports['mpns-tile'] =
         wideBackBackgroundImage: "#005e8a"
 
 exports['mpns-raw'] =
-    enabled: yes
+    enabled: no
     class: require('./lib/pushservices/mpns').PushServiceMPNS
     type: 'raw'

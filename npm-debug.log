@@ -1,32 +1,363 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
+1 verbose cli   'install' ]
 2 info using npm@1.1.59
 3 info using node@v0.8.8
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose read json C:\push3\pushd-master\package.json
-6 verbose run-script [ 'prestart', 'start', 'poststart' ]
-7 info prestart pushd@1.5.10
-8 info start pushd@1.5.10
-9 verbose unsafe-perm in lifecycle true
-10 silly exec cmd "/c" "sudo node server.js"
-11 silly cmd,/c,sudo node server.js,C:\push3\pushd-master spawning
-12 info pushd@1.5.10 Failed to exec start script
-13 error pushd@1.5.10 start: `sudo node server.js`
-13 error `cmd "/c" "sudo node server.js"` failed with 1
-14 error Failed at the pushd@1.5.10 start script.
-14 error This is most likely a problem with the pushd package,
-14 error not with npm itself.
-14 error Tell the author that this fails on your system:
-14 error     sudo node server.js
-14 error You can get their info via:
-14 error     npm owner ls pushd
-14 error There is likely additional logging output above.
-15 error System Windows_NT 6.1.7601
-16 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-17 error cwd C:\push3\pushd-master
-18 error node -v v0.8.8
-19 error npm -v 1.1.59
-20 error code ELIFECYCLE
-21 verbose exit [ 1, true ]
+5 verbose read json C:\Heroku\Charakapush\package.json
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'C:\\Heroku\\Charakapush',
+7 verbose install   [ 'coffee-script',
+7 verbose install     'apn',
+7 verbose install     'c2dm',
+7 verbose install     'node-gcm',
+7 verbose install     'mpns',
+7 verbose install     'async',
+7 verbose install     'express',
+7 verbose install     'hiredis',
+7 verbose install     'redis',
+7 verbose install     'netmask',
+7 verbose install     'winston' ] ]
+8 verbose from cache C:\Heroku\Charakapush\package.json
+9 info preinstall pushd@1.5.10
+10 verbose read json C:\Heroku\Charakapush\node_modules\apn\package.json
+11 verbose read json C:\Heroku\Charakapush\node_modules\async\package.json
+12 verbose read json C:\Heroku\Charakapush\node_modules\c2dm\package.json
+13 verbose read json C:\Heroku\Charakapush\node_modules\coffee-script\package.json
+14 verbose read json C:\Heroku\Charakapush\node_modules\express\package.json
+15 verbose read json C:\Heroku\Charakapush\node_modules\mpns\package.json
+16 verbose read json C:\Heroku\Charakapush\node_modules\netmask\package.json
+17 verbose read json C:\Heroku\Charakapush\node_modules\node-gcm\package.json
+18 verbose read json C:\Heroku\Charakapush\node_modules\redis\package.json
+19 verbose read json C:\Heroku\Charakapush\node_modules\winston\package.json
+20 verbose from cache C:\Heroku\Charakapush\package.json
+21 verbose readDependencies using package.json deps
+22 verbose read json C:\Heroku\Charakapush\node_modules\.bin\package.json
+23 verbose from cache C:\Heroku\Charakapush\node_modules\apn\package.json
+24 verbose from cache C:\Heroku\Charakapush\node_modules\async\package.json
+25 verbose from cache C:\Heroku\Charakapush\node_modules\c2dm\package.json
+26 verbose from cache C:\Heroku\Charakapush\node_modules\coffee-script\package.json
+27 verbose from cache C:\Heroku\Charakapush\node_modules\express\package.json
+28 verbose from cache C:\Heroku\Charakapush\node_modules\mpns\package.json
+29 verbose from cache C:\Heroku\Charakapush\node_modules\netmask\package.json
+30 verbose from cache C:\Heroku\Charakapush\node_modules\node-gcm\package.json
+31 verbose from cache C:\Heroku\Charakapush\node_modules\redis\package.json
+32 verbose from cache C:\Heroku\Charakapush\node_modules\winston\package.json
+33 verbose already installed skipping coffee-script@~1.2.0 C:\Heroku\Charakapush
+34 verbose already installed skipping apn@1.3.2 C:\Heroku\Charakapush
+35 verbose already installed skipping c2dm@1.1.0 C:\Heroku\Charakapush
+36 verbose cache add [ 'node-gcm@latest', null ]
+37 silly cache add name=undefined spec="node-gcm@latest" args=["node-gcm@latest",null]
+38 verbose parsed url { pathname: 'node-gcm@latest',
+38 verbose parsed url   path: 'node-gcm@latest',
+38 verbose parsed url   href: 'node-gcm@latest' }
+39 silly cache add name="node-gcm" spec="latest" args=["node-gcm","latest"]
+40 verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+41 verbose addNamed [ 'node-gcm', 'latest' ]
+42 verbose addNamed [ null, null ]
+43 verbose cache add [ 'mpns@latest', null ]
+44 silly cache add name=undefined spec="mpns@latest" args=["mpns@latest",null]
+45 verbose parsed url { pathname: 'mpns@latest',
+45 verbose parsed url   path: 'mpns@latest',
+45 verbose parsed url   href: 'mpns@latest' }
+46 silly cache add name="mpns" spec="latest" args=["mpns","latest"]
+47 verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+48 verbose addNamed [ 'mpns', 'latest' ]
+49 verbose addNamed [ null, null ]
+50 verbose already installed skipping async@~0.2.5 C:\Heroku\Charakapush
+51 verbose already installed skipping express@~3.1.0 C:\Heroku\Charakapush
+52 verbose cache add [ 'hiredis@~0.1.14', null ]
+53 silly cache add name=undefined spec="hiredis@~0.1.14" args=["hiredis@~0.1.14",null]
+54 verbose parsed url { pathname: 'hiredis@~0.1.14',
+54 verbose parsed url   path: 'hiredis@~0.1.14',
+54 verbose parsed url   href: 'hiredis@~0.1.14' }
+55 silly cache add name="hiredis" spec="~0.1.14" args=["hiredis","~0.1.14"]
+56 verbose parsed url { pathname: '~0.1.14', path: '~0.1.14', href: '~0.1.14' }
+57 verbose addNamed [ 'hiredis', '~0.1.14' ]
+58 verbose addNamed [ null, '>=0.1.14- <0.2.0-' ]
+59 verbose already installed skipping redis@~0.8.2 C:\Heroku\Charakapush
+60 verbose already installed skipping netmask@~0.0.2 C:\Heroku\Charakapush
+61 verbose already installed skipping winston@~0.6.2 C:\Heroku\Charakapush
+62 silly lockFile 0a6a4237-node-gcm-latest node-gcm@latest
+63 verbose lock node-gcm@latest C:\Users\904114\AppData\Roaming\npm-cache\0a6a4237-node-gcm-latest.lock
+64 silly lockFile 6a468b54-mpns-latest mpns@latest
+65 verbose lock mpns@latest C:\Users\904114\AppData\Roaming\npm-cache\6a468b54-mpns-latest.lock
+66 silly lockFile 2eb82256-hiredis-0-1-14 hiredis@~0.1.14
+67 verbose lock hiredis@~0.1.14 C:\Users\904114\AppData\Roaming\npm-cache\2eb82256-hiredis-0-1-14.lock
+68 info addNameTag [ 'node-gcm', 'latest' ]
+69 info addNameTag [ 'mpns', 'latest' ]
+70 silly addNameRange { name: 'hiredis', range: '>=0.1.14- <0.2.0-', hasData: false }
+71 verbose url raw hiredis
+72 verbose url resolving [ 'https://registry.npmjs.org/', './hiredis' ]
+73 verbose url resolved https://registry.npmjs.org/hiredis
+74 info retry registry request attempt 1 at 19:22:13
+75 verbose etag "5PUZHL6JCPPFTUZOAVINN8INC"
+76 http GET https://registry.npmjs.org/hiredis
+77 verbose url raw node-gcm
+78 verbose url resolving [ 'https://registry.npmjs.org/', './node-gcm' ]
+79 verbose url resolved https://registry.npmjs.org/node-gcm
+80 info retry registry request attempt 1 at 19:22:14
+81 verbose etag "DWV894ZC3BK7LV64IVLBFZFIA"
+82 http GET https://registry.npmjs.org/node-gcm
+83 verbose url raw mpns
+84 verbose url resolving [ 'https://registry.npmjs.org/', './mpns' ]
+85 verbose url resolved https://registry.npmjs.org/mpns
+86 info retry registry request attempt 1 at 19:22:14
+87 verbose etag "F3NB4SLD27VTFAHEP8ZNA3SAD"
+88 http GET https://registry.npmjs.org/mpns
+89 http 304 https://registry.npmjs.org/mpns
+90 silly registry.get cb [ 304,
+90 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+90 silly registry.get     etag: '"F3NB4SLD27VTFAHEP8ZNA3SAD"',
+90 silly registry.get     date: 'Thu, 29 Aug 2013 23:22:15 GMT',
+90 silly registry.get     'content-length': '0' } ]
+91 verbose etag mpns from cache
+92 http 304 https://registry.npmjs.org/hiredis
+93 silly registry.get cb [ 304,
+93 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+93 silly registry.get     etag: '"5PUZHL6JCPPFTUZOAVINN8INC"',
+93 silly registry.get     date: 'Thu, 29 Aug 2013 23:22:15 GMT',
+93 silly registry.get     'content-length': '0' } ]
+94 verbose etag hiredis from cache
+95 http 304 https://registry.npmjs.org/node-gcm
+96 silly registry.get cb [ 304,
+96 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+96 silly registry.get     etag: '"DWV894ZC3BK7LV64IVLBFZFIA"',
+96 silly registry.get     date: 'Thu, 29 Aug 2013 23:22:15 GMT',
+96 silly registry.get     'content-length': '0' } ]
+97 verbose etag node-gcm from cache
+98 silly addNameRange number 2 { name: 'hiredis', range: '>=0.1.14- <0.2.0-', hasData: true }
+99 silly addNameRange versions [ 'hiredis',
+99 silly addNameRange   [ '0.1.0',
+99 silly addNameRange     '0.1.1',
+99 silly addNameRange     '0.1.2',
+99 silly addNameRange     '0.1.3',
+99 silly addNameRange     '0.1.4',
+99 silly addNameRange     '0.1.5',
+99 silly addNameRange     '0.1.6',
+99 silly addNameRange     '0.1.8',
+99 silly addNameRange     '0.1.9',
+99 silly addNameRange     '0.1.10',
+99 silly addNameRange     '0.1.12',
+99 silly addNameRange     '0.1.13',
+99 silly addNameRange     '0.1.14',
+99 silly addNameRange     '0.1.15' ] ]
+100 verbose addNamed [ 'hiredis', '0.1.15' ]
+101 verbose addNamed [ '0.1.15', '0.1.15' ]
+102 silly lockFile 7ce4b3b8-hiredis-0-1-15 hiredis@0.1.15
+103 verbose lock hiredis@0.1.15 C:\Users\904114\AppData\Roaming\npm-cache\7ce4b3b8-hiredis-0-1-15.lock
+104 verbose addNamed [ 'node-gcm', '0.9.6' ]
+105 verbose addNamed [ '0.9.6', '0.9.6' ]
+106 silly lockFile dc6e4227-node-gcm-0-9-6 node-gcm@0.9.6
+107 verbose lock node-gcm@0.9.6 C:\Users\904114\AppData\Roaming\npm-cache\dc6e4227-node-gcm-0-9-6.lock
+108 verbose addNamed [ 'mpns', '2.0.1' ]
+109 verbose addNamed [ '2.0.1', '2.0.1' ]
+110 silly lockFile 7d56dac1-mpns-2-0-1 mpns@2.0.1
+111 verbose lock mpns@2.0.1 C:\Users\904114\AppData\Roaming\npm-cache\7d56dac1-mpns-2-0-1.lock
+112 verbose read json C:\Users\904114\AppData\Roaming\npm-cache\node-gcm\0.9.6\package\package.json
+113 verbose read json C:\Users\904114\AppData\Roaming\npm-cache\mpns\2.0.1\package\package.json
+114 silly lockFile dc6e4227-node-gcm-0-9-6 node-gcm@0.9.6
+115 silly lockFile 0a6a4237-node-gcm-latest node-gcm@latest
+116 info already installed node-gcm@0.9.6
+117 silly lockFile 7d56dac1-mpns-2-0-1 mpns@2.0.1
+118 silly lockFile 6a468b54-mpns-latest mpns@latest
+119 info already installed mpns@2.0.1
+120 verbose read json C:\Users\904114\AppData\Roaming\npm-cache\hiredis\0.1.15\package\package.json
+121 silly lockFile 7ce4b3b8-hiredis-0-1-15 hiredis@0.1.15
+122 silly lockFile 2eb82256-hiredis-0-1-14 hiredis@~0.1.14
+123 silly resolved [ { name: 'hiredis',
+123 silly resolved     description: 'Wrapper for reply processing code in hiredis',
+123 silly resolved     version: '0.1.15',
+123 silly resolved     homepage: 'http://github.com/pietern/hiredis-node',
+123 silly resolved     author: { name: 'Pieter Noordhuis', email: 'pcnoordhuis@gmail.com' },
+123 silly resolved     main: 'hiredis',
+123 silly resolved     scripts: { test: 'node test/reader.js', install: 'node-gyp rebuild' },
+123 silly resolved     dependencies: { bindings: '*' },
+123 silly resolved     engines: { node: '>= 0.6.0' },
+123 silly resolved     gypfile: true,
+123 silly resolved     readme: '# hiredis-node\n\nNode extension that wraps [hiredis][hiredis].\nBecause Node is already good at doing I/O, hiredis-node only provides\nbindings to the protocol parser.\nThe hiredis protocol parser is faster than JavaScript protocol parsers,\nbut the speedup only becomes noticable for large replies.\nIf you use Redis for simple SET/GET operations, there won\'t be a big\nbenefit to using hiredis.\nIf you use Redis for big SUNION/SINTER/LRANGE/ZRANGE operations, the\nbenefit to using hiredis-node can be significant.\n\n[hiredis]: http://github.com/antirez/hiredis\n\n## Install\n\nInstall with [NPM][npm]:\n\n```\nnpm install hiredis\n```\n\n[npm]: https://npmjs.org/\n\n## Usage\n\nhiredis-node works out of the box with Matt Ranney\'s [node_redis][node_redis].\nThe latter has an optional dependency on hiredis-node, so maybe you\'re\nalready using it without knowing.\n\nAlternatively, you can use it directly:\n\n```javascript\nvar hiredis = require("hiredis"),\n    reader = new hiredis.Reader();\n\n// Data comes in\nreader.feed("$5\\r\\nhello\\r\\n");\n\n// Reply comes out\nreader.get() // => "hello"\n```\n\nInstead of returning strings for bulk payloads, it can also return\nbuffers:\n\n```javascript\nvar hiredis = require("hiredis"),\n    reader = new hiredis.Reader({ return_buffers: true });\n\n// Data comes in\nreader.feed("$5\\r\\nhello\\r\\n");\n\n// Reply comes out\nreader.get() // => <Buffer 68 65 6c 6c 6f>\n```\n\n[node_redis]: http://github.com/mranney/node_redis\n\n## License\n\nThis code is released under the BSD license, after the license of hiredis.\n',
+123 silly resolved     _id: 'hiredis@0.1.15',
+123 silly resolved     _from: 'hiredis@~0.1.14' } ]
+124 info install hiredis@0.1.15 into C:\Heroku\Charakapush
+125 info installOne hiredis@0.1.15
+126 verbose from cache C:\Users\904114\AppData\Roaming\npm-cache\hiredis\0.1.15\package\package.json
+127 info C:\Heroku\Charakapush\node_modules\hiredis unbuild
+128 verbose read json C:\Heroku\Charakapush\node_modules\hiredis\package.json
+129 verbose tar unpack C:\Users\904114\AppData\Roaming\npm-cache\hiredis\0.1.15\package.tgz
+130 silly lockFile 8e28167c-Charakapush-node-modules-hiredis C:\Heroku\Charakapush\node_modules\hiredis
+131 verbose lock C:\Heroku\Charakapush\node_modules\hiredis C:\Users\904114\AppData\Roaming\npm-cache\8e28167c-Charakapush-node-modules-hiredis.lock
+132 silly gunzTarPerm modes [ '777', '666' ]
+133 silly gunzTarPerm extractEntry package.json
+134 silly gunzTarPerm extractEntry README.md
+135 silly gunzTarPerm extractEntry bench.js
+136 silly gunzTarPerm extractEntry hiredis.js
+137 silly gunzTarPerm extractEntry binding.gyp
+138 silly gunzTarPerm extractEntry COPYING
+139 silly gunzTarPerm extractEntry deps/hiredis/README.md
+140 silly gunzTarPerm extractEntry deps/hiredis/example.c
+141 silly gunzTarPerm extractEntry deps/hiredis/async.h
+142 silly gunzTarPerm extractEntry deps/hiredis/CHANGELOG.md
+143 silly gunzTarPerm extractEntry deps/hiredis/COPYING
+144 silly gunzTarPerm extractEntry deps/hiredis/dict.c
+145 silly gunzTarPerm extractEntry deps/hiredis/dict.h
+146 silly gunzTarPerm extractEntry deps/hiredis/example-ae.c
+147 silly gunzTarPerm extractEntry deps/hiredis/example-libev.c
+148 silly gunzTarPerm extractEntry deps/hiredis/example-libevent.c
+149 silly gunzTarPerm extractEntry deps/hiredis/async.c
+150 silly gunzTarPerm extractEntry deps/hiredis/fmacros.h
+151 silly gunzTarPerm extractEntry deps/hiredis/hiredis.c
+152 silly gunzTarPerm extractEntry deps/hiredis/hiredis.h
+153 silly gunzTarPerm extractEntry deps/hiredis/Makefile
+154 silly gunzTarPerm extractEntry deps/hiredis/net.c
+155 silly gunzTarPerm extractEntry deps/hiredis/net.h
+156 silly gunzTarPerm extractEntry deps/hiredis/adapters/ae.h
+157 silly gunzTarPerm extractEntry deps/hiredis/adapters/libev.h
+158 silly gunzTarPerm extractEntry deps/hiredis/adapters/libevent.h
+159 silly gunzTarPerm extractEntry deps/hiredis/sds.c
+160 silly gunzTarPerm extractEntry deps/hiredis/sds.h
+161 silly gunzTarPerm extractEntry deps/hiredis/test.c
+162 silly gunzTarPerm extractEntry deps/hiredis.gyp
+163 silly gunzTarPerm extractEntry src/hiredis.cc
+164 silly gunzTarPerm extractEntry src/reader.cc
+165 silly gunzTarPerm extractEntry src/reader.h
+166 silly gunzTarPerm extractEntry test/reader.js
+167 verbose read json C:\Heroku\Charakapush\node_modules\hiredis\package.json
+168 silly lockFile 8e28167c-Charakapush-node-modules-hiredis C:\Heroku\Charakapush\node_modules\hiredis
+169 info preinstall hiredis@0.1.15
+170 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\package.json
+171 verbose readDependencies using package.json deps
+172 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\package.json
+173 verbose readDependencies using package.json deps
+174 verbose cache add [ 'bindings@*', null ]
+175 silly cache add name=undefined spec="bindings@*" args=["bindings@*",null]
+176 verbose parsed url { pathname: 'bindings@*',
+176 verbose parsed url   path: 'bindings@*',
+176 verbose parsed url   href: 'bindings@*' }
+177 silly cache add name="bindings" spec="*" args=["bindings","*"]
+178 verbose parsed url { pathname: '*', path: '*', href: '*' }
+179 verbose addNamed [ 'bindings', '*' ]
+180 verbose addNamed [ null, '' ]
+181 silly lockFile a3858fc2-bindings bindings@*
+182 verbose lock bindings@* C:\Users\904114\AppData\Roaming\npm-cache\a3858fc2-bindings.lock
+183 silly addNameRange { name: 'bindings', range: '', hasData: false }
+184 verbose url raw bindings
+185 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+186 verbose url resolved https://registry.npmjs.org/bindings
+187 info retry registry request attempt 1 at 19:22:16
+188 verbose etag "7XQRO94WP9TZJP1WZGUS3P5I4"
+189 http GET https://registry.npmjs.org/bindings
+190 http 304 https://registry.npmjs.org/bindings
+191 silly registry.get cb [ 304,
+191 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+191 silly registry.get     etag: '"7XQRO94WP9TZJP1WZGUS3P5I4"',
+191 silly registry.get     date: 'Thu, 29 Aug 2013 23:22:17 GMT',
+191 silly registry.get     'content-length': '0' } ]
+192 verbose etag bindings from cache
+193 silly addNameRange number 2 { name: 'bindings', range: '', hasData: true }
+194 silly addNameRange versions [ 'bindings',
+194 silly addNameRange   [ '0.0.1',
+194 silly addNameRange     '0.1.0',
+194 silly addNameRange     '0.1.1',
+194 silly addNameRange     '0.2.0',
+194 silly addNameRange     '0.2.1',
+194 silly addNameRange     '0.2.2',
+194 silly addNameRange     '0.2.3',
+194 silly addNameRange     '0.2.4',
+194 silly addNameRange     '0.3.0',
+194 silly addNameRange     '0.4.0',
+194 silly addNameRange     '1.0.0',
+194 silly addNameRange     '1.1.0',
+194 silly addNameRange     '1.1.1' ] ]
+195 verbose addNamed [ 'bindings', '1.1.1' ]
+196 verbose addNamed [ '1.1.1', '1.1.1' ]
+197 silly lockFile 52dd60a7-bindings-1-1-1 bindings@1.1.1
+198 verbose lock bindings@1.1.1 C:\Users\904114\AppData\Roaming\npm-cache\52dd60a7-bindings-1-1-1.lock
+199 verbose read json C:\Users\904114\AppData\Roaming\npm-cache\bindings\1.1.1\package\package.json
+200 silly lockFile 52dd60a7-bindings-1-1-1 bindings@1.1.1
+201 silly lockFile a3858fc2-bindings bindings@*
+202 silly resolved [ { name: 'bindings',
+202 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+202 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+202 silly resolved     version: '1.1.1',
+202 silly resolved     author:
+202 silly resolved      { name: 'Nathan Rajlich',
+202 silly resolved        email: 'nathan@tootallnate.net',
+202 silly resolved        url: 'http://tootallnate.net' },
+202 silly resolved     repository:
+202 silly resolved      { type: 'git',
+202 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+202 silly resolved     main: './bindings.js',
+202 silly resolved     readme: 'node-bindings\n=============\n### Helper module for loading your native module\'s .node file\n\nThis is a helper module for authors of Node.js native addon modules.\nIt is basically the "swiss army knife" of `require()`ing your native module\'s\n`.node` file.\n\nThroughout the course of Node\'s native addon history, addons have ended up being\ncompiled in a variety of different places, depending on which build tool and which\nversion of node was used. To make matters worse, now the _gyp_ build tool can\nproduce either a _Release_ or _Debug_ build, each being built into different\nlocations.\n\nThis module checks _all_ the possible locations that a native addon would be built\nat, and returns the first one that loads successfully.\n\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install bindings\n```\n\nOr add it to the `"dependencies"` section of your _package.json_ file.\n\n\nExample\n-------\n\n`require()`ing the proper bindings file for the current node version, platform\nand architecture is as simple as:\n\n``` js\nvar bindings = require(\'bindings\')(\'binding.node\')\n\n// Use your bindings defined in your C files\nbindings.your_c_function()\n```\n\n\nNice Error Output\n-----------------\n\nWhen the `.node` file could not be loaded, `node-bindings` throws an Error with\na nice error message telling you exactly what was tried. You can also check the\n`err.tries` Array property.\n\n```\nError: Could not load the bindings file. Tried:\n → /Users/nrajlich/ref/build/binding.node\n → /Users/nrajlich/ref/build/Debug/binding.node\n → /Users/nrajlich/ref/build/Release/binding.node\n → /Users/nrajlich/ref/out/Debug/binding.node\n → /Users/nrajlich/ref/Debug/binding.node\n → /Users/nrajlich/ref/out/Release/binding.node\n → /Users/nrajlich/ref/Release/binding.node\n → /Users/nrajlich/ref/build/default/binding.node\n → /Users/nrajlich/ref/compiled/0.8.2/darwin/x64/binding.node\n    at bindings (/Users/nrajlich/ref/node_modules/bindings/bindings.js:84:13)\n    at Object.<anonymous> (/Users/nrajlich/ref/lib/ref.js:5:47)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    ...\n```\n\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+202 silly resolved     _id: 'bindings@1.1.1',
+202 silly resolved     _from: 'bindings@*' } ]
+203 info install bindings@1.1.1 into C:\Heroku\Charakapush\node_modules\hiredis
+204 info installOne bindings@1.1.1
+205 verbose from cache C:\Users\904114\AppData\Roaming\npm-cache\bindings\1.1.1\package\package.json
+206 info C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings unbuild
+207 verbose read json C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings\package.json
+208 verbose tar unpack C:\Users\904114\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+209 silly lockFile 3c3ca925-es-hiredis-node-modules-bindings C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings
+210 verbose lock C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings C:\Users\904114\AppData\Roaming\npm-cache\3c3ca925-es-hiredis-node-modules-bindings.lock
+211 silly gunzTarPerm modes [ '777', '666' ]
+212 silly gunzTarPerm extractEntry package.json
+213 silly gunzTarPerm extractEntry README.md
+214 silly gunzTarPerm extractEntry bindings.js
+215 verbose read json C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings\package.json
+216 silly lockFile 3c3ca925-es-hiredis-node-modules-bindings C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings
+217 info preinstall bindings@1.1.1
+218 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings\package.json
+219 verbose readDependencies using package.json deps
+220 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings\package.json
+221 verbose readDependencies using package.json deps
+222 silly resolved []
+223 verbose about to build C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings
+224 info build C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings
+225 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\node_modules\bindings\package.json
+226 verbose linkStuff [ false,
+226 verbose linkStuff   false,
+226 verbose linkStuff   false,
+226 verbose linkStuff   'C:\\Heroku\\Charakapush\\node_modules\\hiredis\\node_modules' ]
+227 info linkStuff bindings@1.1.1
+228 verbose linkBins bindings@1.1.1
+229 verbose linkMans bindings@1.1.1
+230 verbose rebuildBundles bindings@1.1.1
+231 info install bindings@1.1.1
+232 info postinstall bindings@1.1.1
+233 verbose about to build C:\Heroku\Charakapush\node_modules\hiredis
+234 info build C:\Heroku\Charakapush\node_modules\hiredis
+235 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\package.json
+236 verbose linkStuff [ false, false, false, 'C:\\Heroku\\Charakapush\\node_modules' ]
+237 info linkStuff hiredis@0.1.15
+238 verbose linkBins hiredis@0.1.15
+239 verbose linkMans hiredis@0.1.15
+240 verbose rebuildBundles hiredis@0.1.15
+241 verbose rebuildBundles [ 'bindings' ]
+242 info install hiredis@0.1.15
+243 verbose unsafe-perm in lifecycle true
+244 silly exec cmd "/c" "node-gyp rebuild"
+245 silly cmd,/c,node-gyp rebuild,C:\Heroku\Charakapush\node_modules\hiredis spawning
+246 info hiredis@0.1.15 Failed to exec install script
+247 info C:\Heroku\Charakapush\node_modules\hiredis unbuild
+248 verbose from cache C:\Heroku\Charakapush\node_modules\hiredis\package.json
+249 info preuninstall hiredis@0.1.15
+250 info uninstall hiredis@0.1.15
+251 verbose true,C:\Heroku\Charakapush\node_modules,C:\Heroku\Charakapush\node_modules unbuild hiredis@0.1.15
+252 info postuninstall hiredis@0.1.15
+253 error hiredis@0.1.15 install: `node-gyp rebuild`
+253 error `cmd "/c" "node-gyp rebuild"` failed with 1
+254 error Failed at the hiredis@0.1.15 install script.
+254 error This is most likely a problem with the hiredis package,
+254 error not with npm itself.
+254 error Tell the author that this fails on your system:
+254 error     node-gyp rebuild
+254 error You can get their info via:
+254 error     npm owner ls hiredis
+254 error There is likely additional logging output above.
+255 error System Windows_NT 6.1.7601
+256 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+257 error cwd C:\Heroku\Charakapush
+258 error node -v v0.8.8
+259 error npm -v 1.1.59
+260 error code ELIFECYCLE
+261 verbose exit [ 1, true ]
