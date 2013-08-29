@@ -3,27 +3,6 @@
     "name": "pushd",
     "description": "Blazing fast multi-protocol mobile push notification service",
     "version": "1.5.10",
-    "homepage": "https://github.com/rs/pushd",
-    "keywords": ["push", "notification", "apns", "c2dm", "mpns", "ios", "android", "windows", "phone"],
-    "repository":
-    {
-        "type": "git",
-        "url": "git://github.com/rs/pushd.git"
-    },
-    "preferGlobal": "true",
-    "bin":
-    {
-        "pushd-server": "./server.js"
-    },
-    "directories":
-    {
-        "lib": "./lib"
-    },
-    "scripts":
-    {
-        "start": "sudo node server.js",
-        "test": "mocha --compilers coffee:coffee-script --reporter spec tests/*.coffee"
-    },
     "engines":
     {
         "node": "latest",
@@ -42,15 +21,5 @@
         "redis": "~0.8.2",
         "netmask": "~0.0.2",
         "winston": "~0.6.2"
-    },
-    "devDependencies":
-    {
-        "mocha": "*",
-        "should": "*"
-    },
-    "licenses":
-    [{
-      "type": "MIT",
-      "url": "https://github.com/rs/pushd/raw/master/LICENSE"
-    }]
+    }
 }
