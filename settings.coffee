@@ -8,7 +8,7 @@ exports.server =
     access_log: yes
     acl:
         # restrict publish access to private networks
-        publish: ['127.0.0.1', '10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16']
+        publish: ['127.0.0.1', '10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16', '107.20.187.159', '107.20.187.159/8000']
 #    auth:
 #        # require HTTP basic authentication, username is 'admin' and
 #        # password is 'password'
