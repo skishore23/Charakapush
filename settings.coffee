@@ -3,7 +3,7 @@ exports.server =
     redis_host: 'scat.redistogo.com'
     # redis_socket: '/var/run/redis/redis.sock'
     redis_auth: 'bdbca0a711623021a8780e6074007492'
-    tcp_port: 80
+    tcp_port: 8000
     udp_port: 8000
     access_log: yes
     acl:
